@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: ${db.url:jdbc:mysql://localhost:3307/demo_signup?allowPublicKeyRetrieval=true}
+    username: ${db.username:root}
+    password: ${db.password:root}
+
+logging:
+  level:
+    root: debug
+    com.zaxxer.hikari: trace
